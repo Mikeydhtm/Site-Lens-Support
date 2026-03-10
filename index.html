@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Lens – Support & Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f2f4f7;
+      color: #1c1c1e;
+      line-height: 1.7;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #0d1628 0%, #1a2e4a 100%);
+      padding: 60px 24px 48px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .icon-wrap {
+      width: 90px;
+      height: 90px;
+      background: #1e3a5f;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+
+    .icon-wrap svg {
+      width: 50px;
+      height: 50px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 1rem;
+      color: #8baecf;
+    }
+
+    /* ── Nav tabs ── */
+    nav {
+      background: #0d1628;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    nav a {
+      color: #8baecf;
+      text-decoration: none;
+      padding: 14px 32px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s;
+    }
+
+    nav a:hover, nav a.active {
+      color: #fff;
+      border-bottom-color: #4b8edb;
+    }
+
+    /* ── Main layout ── */
+    main {
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 0 24px 80px;
+    }
+
+    section {
+      margin-bottom: 64px;
+    }
+
+    .section-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: #4b8edb;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #0d1628;
+      margin-bottom: 6px;
+    }
+
+    .meta {
+      font-size: 0.82rem;
+      color: #8e8e93;
+      margin-bottom: 28px;
+    }
+
+    /* ── Cards ── */
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #0d1628;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 0.92rem;
+      color: #444;
+    }
+
+    /* ── Privacy badge ── */
+    .privacy-badge {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: #eaf2ff;
+      border: 1px solid #c5dcf7;
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+
+    .privacy-badge .badge-icon {
+      font-size: 1.8rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .privacy-badge strong {
+      display: block;
+      font-size: 0.95rem;
+      color: #0d1628;
+      margin-bottom: 4px;
+    }
+
+    .privacy-badge p {
+      font-size: 0.88rem;
+      color: #3a6ea5;
+    }
+
+    /* ── Bullet list ── */
+    ul.policy-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.policy-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: #444;
+      padding: 5px 0;
+    }
+
+    ul.policy-list li::before {
+      content: "•";
+      color: #4b8edb;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ── Support contact ── */
+    .contact-card {
+      background: linear-gradient(135deg, #0d1628, #1a2e4a);
+      border-radius: 16px;
+      padding: 28px;
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(13,22,40,0.25);
+    }
+
+    .contact-card p {
+      color: #8baecf;
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+
+    .contact-card a {
+      display: inline-block;
+      background: #4b8edb;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 12px 28px;
+      border-radius: 50px;
+      transition: background 0.2s;
+    }
+
+    .contact-card a:hover {
+      background: #3a7cc9;
+    }
+
+    /* ── FAQ ── */
+    details {
+      background: #fff;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      cursor: pointer;
+    }
+
+    details summary {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #0d1628;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    details summary::after {
+      content: "+";
+      font-size: 1.2rem;
+      color: #4b8edb;
+      font-weight: 300;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* ── Divider ── */
+    hr {
+      border: none;
+      border-top: 1px solid #e5e5ea;
+      margin: 32px 0;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #aeaeb2;
+      padding: 24px;
+      border-top: 1px solid #e5e5ea;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="icon-wrap">
+      <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="8" y="10" width="34" height="28" rx="2" stroke="#4b8edb" stroke-width="2"/>
+        <line x1="8" y1="24" x2="42" y2="24" stroke="#4b8edb" stroke-width="1.5"/>
+        <line x1="26" y1="10" x2="26" y2="38" stroke="#4b8edb" stroke-width="1.5"/>
+        <rect x="27" y="25" width="13" height="11" rx="1" fill="#4b8edb" opacity="0.8"/>
+        <line x1="33" y1="27" x2="33" y2="34" stroke="#f5a623" stroke-width="1.5"/>
+        <line x1="29.5" y1="30.5" x2="36.5" y2="30.5" stroke="#f5a623" stroke-width="1.5"/>
+        <circle cx="33" cy="30.5" r="1.5" fill="#f5a623"/>
+      </svg>
+    </div>
+    <h1>Site Lens</h1>
+    <p>Professional Site Survey Tool for iOS</p>
+  </header>
+
+  <!-- Nav -->
+  <nav>
+    <a href="#support" class="active">Support</a>
+    <a href="#privacy">Privacy Policy</a>
+  </nav>
+
+  <main>
+
+    <!-- ── SUPPORT ── -->
+    <section id="support">
+      <div class="section-eyebrow">Help & Support</div>
+      <h2>We're here to help</h2>
+      <p class="meta">Having a problem or got a suggestion? Reach out any time.</p>
+
+      <!-- FAQ -->
+      <details open>
+        <summary>How do I delete a project?</summary>
+        <p>On the home screen, tap the trash icon on any project card. You'll be asked to confirm before anything is deleted — so no accidental losses.</p>
+      </details>
+
+      <details>
+        <summary>How do I add my own survey conditions?</summary>
+        <p>When creating a new project, choose "Start Fresh" to build your own conditions from scratch, or select "Use Standard Conditions" and add extras within each section of the survey.</p>
+      </details>
+
+      <details>
+        <summary>Where is my data stored?</summary>
+        <p>Everything stays on your device. Site Lens doesn't use any external servers — your projects, notes, and photos never leave your iPhone or iPad.</p>
+      </details>
+
+      <details>
+        <summary>How do I export and share my survey?</summary>
+        <p>Open a project and tap the export icon. From there you can share all your survey notes and photos in one go using iOS's standard share sheet — email, AirDrop, Messages, and more.</p>
+      </details>
+
+      <details>
+        <summary>Can I update my name or job title?</summary>
+        <p>Yes — tap the gear icon in the bottom-right corner of the home screen to open Settings, where you can update your profile at any time.</p>
+      </details>
+
+      <hr>
+
+      <!-- Contact -->
+      <div class="contact-card">
+        <p>Can't find what you're looking for? Drop us an email and we'll get back to you.</p>
+        <a href="mailto:mikeydhtm@icloud.com">mikeydhtm@icloud.com</a>
+      </div>
+    </section>
+
+    <!-- ── PRIVACY POLICY ── -->
+    <section id="privacy">
+      <div class="section-eyebrow">Privacy Policy</div>
+      <h2>Your data stays yours</h2>
+      <p class="meta">Last Updated: 9th March 2026</p>
+
+      <div class="privacy-badge">
+        <div class="badge-icon">🔒</div>
+        <div>
+          <strong>No data collection. Full stop.</strong>
+          <p>We do not collect, store, or share any personal data. Everything you enter into Site Lens is stored locally on your device only — and it stays there.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Introduction</h3>
+        <p>This Privacy Policy describes how Site Lens handles your information. Our app is designed from the ground up to respect your privacy. We do not collect, store, or share any personal data.</p>
+      </div>
+
+      <div class="card">
+        <h3>Information We Collect</h3>
+        <p>We do not collect any personal information. All data entered into the app is stored locally on your device only. Examples of data stored locally include:</p>
+        <br>
+        <ul class="policy-list">
+          <li>Notes and site survey entries</li>
+          <li>Project photos</li>
+          <li>User preferences</li>
+        </ul>
+        <br>
+        <p><strong>This information never leaves your device.</strong></p>
+      </div>
+
+      <div class="card">
+        <h3>Data Storage</h3>
+        <p>All data is stored locally using your device's internal storage. We do not operate servers and we do not transmit your information to any external service.</p>
+      </div>
+
+      <div class="card">
+        <h3>Data Access</h3>
+        <p>We cannot access, view, or retrieve any data you enter into the application. It is entirely private to you.</p>
+      </div>
+
+      <div class="card">
+        <h3>Third Party Services</h3>
+        <p>Site Lens does not use analytics tracking, advertising networks, or third-party data collection tools of any kind.</p>
+      </div>
+
+      <div class="card">
+        <h3>Changes to This Policy</h3>
+        <p>This policy may be updated occasionally. Any changes will be reflected on this page with an updated date.</p>
+      </div>
+
+      <div class="card">
+        <h3>Contact</h3>
+        <p>If you have any questions about this Privacy Policy, please contact: <a href="mailto:mikeydhtm@icloud.com" style="color:#4b8edb;font-weight:600;">mikeydhtm@icloud.com</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Site Lens &nbsp;·&nbsp; All rights reserved
+  </footer>
+
+</body>
+</html>
